@@ -21,5 +21,5 @@ from codehelper import views as cv
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', cv.home),
-    path('Bytes of Brilliance/', cv.code),
+    path('Bytes of Brilliance/', cv.code, name='code'),
 ]
