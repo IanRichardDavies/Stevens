@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from codehelper import views as cv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', cv.home, name='home'),
+    path('Bytes of Brilliance/', cv.code, name='code'),
 ]
