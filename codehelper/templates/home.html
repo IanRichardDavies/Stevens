@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing page for code assistant.</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Every gentleman requires a gentleman.</h1>
+      <h2>Please choose from the offerings below</h2>
+      <a style="text-decoration:none" href="{% url 'code' %}">
+        <button type="button" class="btn btn-primary" name="code_link">Bytes of Brilliance</button>
+      </a>
+      <a style="text-decoration:none" href="{% url 'wisdom' %}">
+        <button type="button" class="btn btn-primary" name="wisdom_link">Words of Wisdom</button>
+      </a>
+    </div>
+  </body>
+</html>
