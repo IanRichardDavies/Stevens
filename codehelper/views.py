@@ -5,4 +5,4 @@ def home(request):
     return render(request, 'home.html')
 
 def code(request):
-    return HttpResponse('<h1>Greatest apologies, Stevens is currently indisposed.</h1>')
+    return render(request, 'code_helper.html')
