@@ -14,7 +14,8 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-load_dotenv()
+DOTENV_PATH = os.path.join(os.path.dirname(__file__), '.env')
+load_dotenv(DOTENV_PATH)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -128,3 +129,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 HF_TOKEN = os.environ.get('HF_TOKEN')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
