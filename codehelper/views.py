@@ -6,3 +6,6 @@ def home(request):
 
 def code(request):
     return render(request, 'code_helper.html')
+
+def add_components(request):
+    return render(request, 'add_components.html')

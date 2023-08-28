@@ -23,4 +23,5 @@ urlpatterns = [
     path('', cv.home, name='home'),
     path('Bytes of Brilliance/', cv.code, name='code'),
     path('wisdom/', include('wisdom.urls')),
+    path('Add Components/', cv.add_components, name='add_components'),
 ]
